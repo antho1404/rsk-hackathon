@@ -1,0 +1,17 @@
+name: "chainpoint"
+tasks:
+  submit:
+    inputs:
+      data:
+        type: Object
+    outputs:
+      success:
+        data:
+          hashIdNode:
+            type: String
+          hash:
+            type: String
+      error:
+        data:
+          error:
+            type: String

@@ -1,0 +1,31 @@
+{
+  "contractAddress": "0xdd2d8eaa124f3fb1cf81c22a00b0c9ab242d0338",
+  "inputs": {
+    "foo": 1,
+    "bar": true
+  },
+  "methodAbi": {
+		"constant": false,
+		"inputs": [
+			{
+				"name": "foo",
+				"type": "uint256"
+			},
+			{
+				"name": "bar",
+				"type": "bool"
+			}
+		],
+		"name": "test",
+		"outputs": [
+			{
+				"name": "id",
+				"type": "bytes32"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+  "privateKey": "0xdba2aeb9a5203c39dc7d4d0527b9b9dbf64f7ec78eb06b918ccbf958121be954"
+}

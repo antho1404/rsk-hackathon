@@ -1,0 +1,15 @@
+name: "IPFS"
+description: "Description of my service"
+tasks: {}
+events: {}
+dependencies:
+  ipfs:
+    image: "ipfs/go-ipfs"
+    command: "daemon --enable-pubsub-experiment"
+    volumes:
+      - "/data/ipfs"
+      - "/export"
+    ports:
+      - "8080"
+      - "4001"
+      - "5001"
