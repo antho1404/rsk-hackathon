@@ -1,5 +1,5 @@
 export default BTC_SERVICE=
-export default BTC_ADDRESS=
+export default BTC_SMART_CONTRACT_ADDRESS=
 export default EVM_SERVICE=
 export default SMART_CONTRACT_ADDRESS=
 export default PRIVATE_KEY=

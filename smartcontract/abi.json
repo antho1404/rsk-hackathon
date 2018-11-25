@@ -3,21 +3,20 @@
 		"constant": false,
 		"inputs": [
 			{
-				"name": "foo",
+				"name": "btcvalue",
 				"type": "uint256"
 			},
 			{
-				"name": "bar",
-				"type": "bool"
+				"name": "addr1",
+				"type": "string"
+			},
+			{
+				"name": "addr2",
+				"type": "string"
 			}
 		],
 		"name": "test",
-		"outputs": [
-			{
-				"name": "id",
-				"type": "bytes32"
-			}
-		],
+		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -33,8 +32,13 @@
 		"inputs": [
 			{
 				"indexed": false,
-				"name": "id",
-				"type": "bytes32"
+				"name": "value",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "to",
+				"type": "string"
 			}
 		],
 		"name": "Transfer",
