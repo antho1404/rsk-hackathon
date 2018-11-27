@@ -1,25 +1,14 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.4.25;
 
 contract Test {
     address public owner;
 
-    bytes32[] tests;
-    uint test_count;
+    event Transfer(uint value, string to);
 
-    event Transfer(bytes32 id);
+    constructor() public {}
 
-    constructor() public {
-        owner = msg.sender;
-    }
-
-    modifier onlyOwner() {
-        if (msg.sender == owner) _;
-    }
-
-    function test(uint foo, bool bar) public onlyOwner returns (bytes32 id) {
-        id = keccak256(abi.encodePacked(foo, bar));
-        tests[test_count] = id;
-        test_count++;
-        return id;
+    function test(uint btcvalue, string addr1, string addr2) public {
+        emit Transfer(btcvalue / 2, addr1);
+        emit Transfer(btcvalue / 2, addr2);
     }
 }
